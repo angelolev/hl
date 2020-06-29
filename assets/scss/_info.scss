@@ -1,0 +1,48 @@
+.info {
+  background: #fff;
+  border-radius: 5px 5px 0 0;
+  border: 1px solid #f3f1f1;
+  box-shadow: 0 2px 12px 0 rgba(169, 158, 158, 0.34901960784313724);
+  padding: 30px 15px;
+  max-width: 290px;
+  margin: -120px auto 0;
+
+  @include breakpoint(768px) {
+    max-width: 590px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__image {
+    background-color: rgba(56, 182, 255, 0.2);
+
+    @include breakpoint(768px) {
+      width: 40%;
+    }
+
+    img {
+      display: block;
+      margin: 0 auto;
+      max-width: 170px;
+    }
+  }
+
+  &__text {
+    padding: 20px 0 0;
+    text-align: center;
+
+    @include breakpoint(768px) {
+      width: 60%;
+    }
+
+    p {
+      line-height: 24px;
+      font-family: "Lato", sans-serif;
+
+      @include breakpoint(1024px) {
+        line-height: 28px;
+      }
+    }
+  }
+}

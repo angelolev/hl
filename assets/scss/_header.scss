@@ -1,0 +1,49 @@
+.header {
+  padding: 60px 15px 150px;
+  background-color: transparent;
+  text-align: center;
+
+  @include breakpoint(768px) {
+    background-color: transparent;
+  }
+
+  h1,
+  h2,
+  p {
+    color: #fff;
+  }
+
+  h1 {
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    font-size: 28px;
+    line-height: 34px;
+
+    @include breakpoint(768px) {
+      max-width: 500px;
+      margin: 0 auto 40px;
+    }
+
+    @include breakpoint(1024px) {
+      margin: 0 auto 40px;
+      font-size: 32px;
+      line-height: 38px;
+    }
+  }
+
+  h2 {
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+    font-size: 20px;
+
+    @include breakpoint(768px) {
+      max-width: 540px;
+      margin: 0 auto 30px;
+    }
+
+    @include breakpoint(1024px) {
+      margin: 0 auto 40px;
+      font-size: 24px;
+    }
+  }
+}

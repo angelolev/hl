@@ -1,0 +1,22 @@
+.nav {
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+  padding: 10px 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  h2 {
+    color: #3f8ad8;
+    margin-left: 70px;
+  }
+
+  img {
+    display: block;
+    max-width: 25%;
+
+    @include breakpoint(768px) {
+      max-width: 110px;
+    }
+  }
+}

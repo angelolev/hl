@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Dosis", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+p {
+  margin: 0;
+}
+
+main {
+  background-color: #116796;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='12' viewBox='0 0 20 12'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='charlie-brown' fill='%231e74ac' fill-opacity='0.4'%3E%3Cpath d='M9.8 12L0 2.2V.8l10 10 10-10v1.4L10.2 12h-.4zm-4 0L0 6.2V4.8L7.2 12H5.8zm8.4 0L20 6.2V4.8L12.8 12h1.4zM9.8 0l.2.2.2-.2h-.4zm-4 0L10 4.2 14.2 0h-1.4L10 2.8 7.2 0H5.8z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  @include breakpoint(768px) {
+  }
+
+  @include breakpoint(1024px) {
+    // background-position: left;
+  }
+}
+
+.btn {
+  background-color: #2e91ea;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  padding: 15px 10px;
+  text-align: center;
+}
+
+.content {
+  background-color: #f5f5f5;
+  padding: 50px 0;
+
+  .wrapper {
+    margin: 0 auto;
+    max-width: 1170px;
+
+    @include breakpoint(768px) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  &__image {
+    display: none;
+
+    img {
+      max-width: 290px;
+    }
+
+    @include breakpoint(768px) {
+      display: block;
+      width: 40%;
+    }
+  }
+}

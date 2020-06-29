@@ -1,0 +1,17 @@
+.banner {
+  background-color: #27ae60;
+  padding: 20px 15px;
+  text-align: center;
+  font-size: 20px;
+  margin-top: 40px;
+
+  @include breakpoint(768px) {
+    margin-top: 80px;
+  }
+
+  p {
+    color: #fff;
+    line-height: 32px;
+    letter-spacing: 1px;
+  }
+}
