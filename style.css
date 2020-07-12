@@ -377,7 +377,6 @@ main {
 @media (min-width: 768px) {
   .form {
     max-width: 500px;
-    width: 50%;
   }
 }
 
@@ -394,22 +393,18 @@ main {
   }
 }
 
-.form__group {
-  margin-bottom: 20px;
-}
-
-.form__group label {
+.form label {
   display: block;
   margin-bottom: 5px;
 }
 
 @media (min-width: 768px) {
-  .form__group label {
+  .form label {
     margin-bottom: 10px;
   }
 }
 
-.form__group input {
+.form input {
   width: 100%;
   height: 44px;
   border-radius: 5px;
@@ -417,9 +412,49 @@ main {
   padding: 5px 10px 5px 15px;
 }
 
-.form__group input:focus {
+@media (min-width: 1024px) {
+  .form input {
+    width: 85%;
+  }
+}
+
+.form input:focus {
   outline-color: #2e91ea;
   outline-width: 1px;
+}
+
+.form .button {
+  background-color: #2e91ea;
+  border-radius: 5px;
+  text-decoration: none;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  padding: 15px 10px;
+  text-align: center;
+}
+
+#mc_embed_signup {
+  font-family: "Lato", sans-serif;
+}
+
+@media (min-width: 768px) {
+  #mc_embed_signup {
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+
+#mc_embed_signup .mc-field-group {
+  margin-bottom: 20px;
+}
+
+#mc_embed_signup div.mce_inline_error {
+  color: #e74c3c !important;
+  background-color: transparent !important;
+  padding: 0 !important;
+  font-weight: normal !important;
 }
 
 .banner {
